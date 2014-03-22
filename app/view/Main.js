@@ -16,10 +16,11 @@ Ext.define('ecwHW4.view.Main', {
                 styleHtmlContent: true,
                 scrollable: true,
 
-                items: {
+                items: 
+                {
                     docked: 'top',
                     xtype: 'titlebar',
-                    title: 'Welcome to Eriks boring homework #4'
+                    title: 'Welcome @ Eriks boring homework #4...'
                 },
 
                 html:	[	
@@ -31,7 +32,7 @@ Ext.define('ecwHW4.view.Main', {
             },
             {
 	            title: 'Carousel',
-	            iconCls: 'action',
+	            iconCls: 'star',
             	xtype: 'carousel',
 	            direction: 'vertical',
                 items: [
@@ -40,10 +41,10 @@ Ext.define('ecwHW4.view.Main', {
                 	    {
 	                		docked: 'top',
 	                        xtype: 'titlebar',
-	                        title: 'Empty Page'
+	                        title: 'Carousel page 1'
                 	    },
                 	    {
-                	    	html: '<br/>Well, this is an terrible empty page'
+                	    	html: "<br/>Well, this is a terribly empty page. But wait a second - perhaps there's another one beneath it...!?"
                 	    }
                 	    ]
                     },{
@@ -51,17 +52,13 @@ Ext.define('ecwHW4.view.Main', {
                         {
                             docked: 'top',
                             xtype: 'titlebar',
-                            title: 'Homework #1 - RIP'
+                            title: 'Homework #1 - Click it!'
                         },
                         {
                             xtype: 'video',
                             url: 'aninstant.mp4',
-                            /*maxWidth: '500px',*/	
-                            posterUrl: 'http://upload.wikimedia.org/wikipedia/commons/thumb/5/58/GHS-pictogram-skull.svg/300px-GHS-pictogram-skull.svg.png'
-                         },
-                        {
-                        	xtype: 'label',
-                            html: 'Click on skull to start video'
+                            posterUrl: 'http://upload.wikimedia.org/wikipedia/commons/thumb/5/58/GHS-pictogram-skull.svg/500px-GHS-pictogram-skull.svg.png'
+                            /*style: 'background:blue',*/
                         }
                     ]
                 }]
@@ -103,6 +100,7 @@ Ext.define('ecwHW4.view.Main', {
                         }
                     }
                 ]
-            }        ]
+            }        
+        ]
     }
 });
